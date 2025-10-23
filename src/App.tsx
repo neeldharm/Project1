@@ -1,12 +1,10 @@
-// import { useState } from 'react'
 import './App.css'
 import Nav from './Nav'
 import Item from './Item'
+// import { useState, useEffect } from 'react'
 
 
-function App() {
-  // const [count, setCount] = useState(0)
-
+export default function App() {
   return (
     <>
       <Nav />
@@ -17,4 +15,7 @@ function App() {
   )
 }
 
-export default App
+// function setup() {
+//   const [items, setItems] = useState([]);
+
+// }
