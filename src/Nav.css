@@ -7,6 +7,15 @@
     z-index: 1;
 }
 
+.sidenav {
+    width: 20vw;
+    position: fixed;
+    left: 0;
+    background-color: #5c5c5c;
+    height: 100vh;
+    padding-top: 60px;
+}
+
 .menu {
     background: none;
     border: none;
