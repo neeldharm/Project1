@@ -4,7 +4,7 @@ import './index.css'
 import App from './App.tsx'
 
 if (localStorage.getItem('searchCodes') == null) {
-  localStorage.setItem('searchCodes', JSON.stringify(['home', 'homes']));
+  localStorage.setItem('searchCodes', JSON.stringify(['home', 'homes', 'creation']));
 }
 createRoot(document.getElementById('root')!).render(
   <StrictMode>

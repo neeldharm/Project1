@@ -1,3 +1,4 @@
+import { matchCode } from './assets';
 import './ItemList.css'
 import { useState, useEffect } from 'react'
 
@@ -5,7 +6,7 @@ export default function ItemList() {
   const [itemSearch, setItemSearch] = useState('home');
   const itemObjects : any[] = [];
   Object.keys(localStorage).forEach((key: string) => {
-    if (key.search(itemSearch) == 0) {
+    if (matchCode(itemSearch, key)) {
       itemObjects.push(
         <Item item={{title: key}} />
       )
