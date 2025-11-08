@@ -3,6 +3,9 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.tsx'
 
+if (localStorage.getItem('searchCodes') == null) {
+  localStorage.setItem('searchCodes', JSON.stringify(['home', 'homes']));
+}
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <App />
